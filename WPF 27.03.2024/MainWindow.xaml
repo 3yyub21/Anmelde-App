@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_27._03._2024.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_27._03._2024"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400" Background="#8B93FF">
+    <Grid>
+        <Border BorderThickness="20" CornerRadius="70" Background="#F5F7F8">
+            <StackPanel>
+                <Label Padding="10" Content="Vorname" Margin="30 10 10 10" FontSize="18" FontWeight="SemiBold"/>
+                <TextBox TextWrapping="Wrap" VerticalContentAlignment="Bottom" x:Name="VornameBox" Height="30" Width="300" FontSize="15" FontWeight="SemiBold"/>
+                <Label Padding="10" Content="Vorname" Margin="30 10 10 10" FontSize="18" FontWeight="SemiBold"/>
+                <TextBox TextWrapping="Wrap" VerticalContentAlignment="Bottom" x:Name="NachnameBox" Height="30" Width="300" FontSize="15" FontWeight="SemiBold"/>
+                <Button Click="Anmelden_Click" x:Name="Anmelden" Content="Anmelden" Background="Green" Height="30" Width="150" VerticalAlignment="Center" Margin="38" FontSize="15" FontWeight="SemiBold" />
+                <Label VerticalContentAlignment="Bottom" Height="30" Width="300" x:Name="AnmeldenLabel" Margin="0 0 0 20" FontSize="15" FontWeight="SemiBold"/>
+                <Button x:Name="Löschen" Click="Löschen_Click" Height="30" Width="150" Content="Löschen" Background="Red" FontSize="15" FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
